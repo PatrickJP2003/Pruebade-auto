@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "nombre": "Jahir Paredes",
+      "cargo": "CEO & Fundador",
+      "descripcion": "Jahir es el visionario detrás de nuestra empresa. Con una pasión por los videojuegos y la innovación, ha liderado el camino desde nuestra fundación.",
+      "imagen": "imagenes/eje1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Patrich Sanchez",
+      "cargo": "Director de Desarrollo de Juegos",
+      "descripcion": "Patrick supervisa el proceso creativo y técnico de nuestros juegos, asegurando que cada título cumpla con los más altos estándares de calidad y diversión.",
+      "imagen": "imagenes/eje2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Stalin Moposita",
+      "cargo": "Director de Marketing",
+      "descripcion": "Stalin es el encargado de llevar nuestros juegos al público. Con una estrategia de marketing innovadora, se asegura de que nuestras creaciones lleguen a todos los rincones del mundo.",
+      "imagen": "imagenes/eje3.jpg"
+    }
+  ]
+  

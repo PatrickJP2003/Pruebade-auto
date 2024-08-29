@@ -1,0 +1,98 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #0c0b09;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 40px;
+  max-width: 1200px; /* Limitamos el ancho del contenedor */
+  margin: auto; /* Centramos el contenedor horizontalmente */
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #000000; /* Cambié el color para contrastar con el fondo oscuro */
+  border-bottom: 2px solid #000000;
+  padding-bottom: 10px;
+  font-weight: 600;
+  text-align: center; /* Centramos los títulos */
+}
+
+.card {
+  border: 2px solid #ffffff; /* Borde blanco fino */
+  border-radius: 12px; /* Bordes redondeados */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Para asegurar que las esquinas redondeadas se apliquen a la imagen también */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Movimiento más sutil */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+
+.card-img-top {
+  height: 200px; /* Altura de la imagen */
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  color: #ffffff; /* Texto blanco */
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.75rem; /* Tamaño de fuente del título */
+  margin-bottom: 15px;
+  font-weight: 700; /* Texto en negrita */
+  color: #ffffff; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+}
+
+.card-text {
+  font-size: 1.125rem; /* Tamaño de fuente del texto */
+  line-height: 1.6;
+  margin-bottom: 15px; /* Espaciado aumentado */
+  font-weight: 500; /* Texto en negrita */
+  color: #ffffff; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+}
+
+.row {
+  margin: 0;
+}
+
+.col-md-4 {
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px; /* Ajustamos el padding para pantallas más pequeñas */
+  }
+
+  .card-img-top {
+    height: 150px; /* Ajustamos la altura de la imagen para pantallas más pequeñas */
+  }
+}

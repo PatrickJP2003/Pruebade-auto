@@ -1,0 +1,27 @@
+[   
+{
+    "id":1,
+    "nombre":"Fortnite",
+    "precio": 0,
+    "tipo":1,
+    "descripcion":"Juego de mundo libre",
+    "imagen": "imagenes/fortnite.jpg"
+},
+{
+    "id":2,
+    "nombre":"Rocket League",
+    "precio": 0,
+    "tipo":2,
+    "descripcion":"Juego de vaqueros",
+    "imagen": "imagenes/rocket.jpg"
+},
+{
+    "id":3,
+    "nombre":"Valorant",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de futbol",
+    "imagen": "imagenes/valorant.jpg"
+}
+
+]

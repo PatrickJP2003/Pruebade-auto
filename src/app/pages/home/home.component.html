@@ -1,0 +1,78 @@
+<div class="container-fluid text-center p-5 bg-dark text-white">
+  <div class="row">
+      <div class="col-md-4 p-0" *ngFor="let oficina of oficinas">
+          <div class="image-container text-center">
+              <img [src]="oficina.imagen" class="img-fluid fixed-size" [alt]="oficina.nombre" >
+              <div class="overlay">
+                  <h2>{{ oficina.nombre.toUpperCase() }}</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid p-0 mb-5">
+  <!-- Carrusel de Ofertas -->
+  <h1 class="my-4 text-center">Ofertas</h1>
+
+  <div id="carouselExampleRide1" class="carousel slide">
+      <div class="carousel-inner">
+          <div *ngFor="let epic of epics; let i = index" [class]="i === 0 ? 'carousel-item active' : 'carousel-item'">
+              <img [src]="epic.imagen" class="d-block w-100" [alt]="epic.nombre">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 *ngIf="epic.precio > 90; else elseTemplate">Producto más caro</h5>
+                  <ng-template #elseTemplate><h5>Producto más comprado</h5></ng-template>
+                  <span [ngSwitch]="epic.tipo">
+                      <div *ngSwitchCase="1">Acción</div>
+                      <div *ngSwitchCase="2">Aventura</div>
+                      <div *ngSwitchCase="3">Competitivo</div>
+                      <div *ngSwitchDefault>Es desconocido</div>
+                  </span>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+      </button>
+  </div>
+</div>
+
+<div class="container-fluid p-0 mt-5">
+  <!-- Carrusel de Juegos Destacados -->
+  <h1 class="my-4 text-center">Juegos Destacados</h1>
+
+  <div id="carouselExampleRide2" class="carousel slide">
+      <div class="carousel-inner">
+          <div *ngFor="let producto of productos; let i = index" [class]="i === 0 ? 'carousel-item active' : 'carousel-item'">
+              <img [src]="producto.imagen" class="d-block w-100" [alt]="producto.nombre">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 *ngIf="producto.precio > 200; else elseTemplate">El producto más caro</h5>
+                  <ng-template #elseTemplate><h5>Juego Gratis</h5></ng-template>
+                  <span [ngSwitch]="producto.tipo">
+                      <div *ngSwitchCase="1">Competitivo</div>
+                      <div *ngSwitchCase="2">Competitivo</div>
+                      <div *ngSwitchCase="3">Competitivo</div>
+                      <div *ngSwitchDefault>Es desconocido</div>
+                  </span>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+      </button>
+  </div>
+</div>
+
+<div class="text-center mb-5">
+  <button type="button" class="btn btn-primary" (click)="onClickButton()">Ir a Productos</button>
+</div>

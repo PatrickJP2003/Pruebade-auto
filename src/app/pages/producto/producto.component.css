@@ -1,0 +1,68 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más formal */
+    color: #f5f5f5; /* Color del texto en toda la página */
+    background-color: #1c1c1c; /* Fondo oscuro para toda la página */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales del contenedor de la tabla */
+.container-fluid.text-center {
+    padding: 40px;
+}
+
+/* Estilos para la tabla */
+.table {
+    background-color: #2a2a2a; /* Fondo de la tabla */
+    color: #e0e0e0; /* Color del texto en la tabla */
+    border-radius: 10px; /* Bordes más redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+    border: 1px solid #444; /* Borde sutil alrededor de la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.table thead th {
+    background-color: #333; /* Fondo de las cabeceras */
+    color: #f5f5f5; /* Color del texto en las cabeceras */
+    font-weight: 600; /* Peso de fuente más ligero */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 12px; /* Espaciado en cabeceras */
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.table tbody tr:hover {
+    background-color: #444; /* Color de fondo al pasar el cursor */
+}
+
+.table td, .table th {
+    padding: 12px; /* Espaciado en celdas */
+    text-align: center; /* Alinear el texto al centro */
+    border-bottom: 1px solid #555; /* Línea divisoria entre filas */
+}
+
+.table img {
+    width: 140px; /* Ajustar el tamaño de las imágenes */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilos para el botón de comprar */
+.btn-comprar {
+    background-color: #6f00ff; /* Color verde suave */
+    border: none;
+    padding: 10px 20px; /* Espaciado más amplio para un botón más prominente */
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Texto en mayúsculas para un look más formal */
+}
+
+.btn-comprar:hover {
+    background-color: #6f00ff; /* Color verde más oscuro al pasar el cursor */
+    transform: scale(1.05);
+}

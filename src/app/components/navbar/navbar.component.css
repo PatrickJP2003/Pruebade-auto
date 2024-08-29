@@ -1,0 +1,99 @@
+.navbar {
+    background-color: #2b2b2b; /* Color de fondo oscuro */
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px; /* Espacio entre los elementos del navbar */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bfff; /* Color azul claro al pasar el mouse */
+}
+
+.btn-outline-light {
+    color: white;
+    border-color: #5a5a5a;
+}
+
+.btn-outline-light:hover {
+    color: #00bfff;
+    border-color: #00bfff;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón Descargar */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+/* Estilo para el botón de Iniciar Sesión */
+.btn-outline-success {
+    color: #00ff7f; /* Verde neón para el texto */
+    border-color: #00ff7f; /* Borde verde neón */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s ease; /* Suaviza la transición de los cambios */
+}
+
+.btn-outline-success:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el mouse */
+    background-color: #00ff7f; /* Fondo verde neón al pasar el mouse */
+    border-color: #00ff7f; /* Mantén el borde verde neón */
+}
+
+/* Estilo para el botón de Cerrar Sesión */
+.btn-outline-danger {
+    color: #ff4c4c; /* Rojo brillante para el texto */
+    border-color: #ff4c4c; /* Borde rojo brillante */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s ease; /* Suaviza la transición de los cambios */
+}
+
+.btn-outline-danger:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el mouse */
+    background-color: #ff4c4c; /* Fondo rojo brillante al pasar el mouse */
+    border-color: #ff4c4c; /* Mantén el borde rojo brillante */
+}
+
+/* Ajustes generales para la barra de navegación */
+.navbar {
+    background-color: #2b2b2b; /* Fondo oscuro */
+    padding: 0.75rem 1.5rem; /* Ajusta el relleno */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Blanco para los enlaces */
+    margin-right: 20px; /* Más espacio entre los enlaces */
+    font-weight: bold; /* Enlaces en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: color 0.3s ease; /* Suaviza la transición de color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bfff; /* Azul claro al pasar el mouse */
+}
+
+.navbar-brand img {
+    margin-right: 15px; /* Aumenta el espacio entre el logo y el texto */
+}
+
+.navbar-toggler {
+    border-color: #5a5a5a; /* Color del borde del botón del colapso */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Color del icono del colapso */
+}
+
+
