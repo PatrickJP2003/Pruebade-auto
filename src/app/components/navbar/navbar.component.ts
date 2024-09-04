@@ -14,11 +14,10 @@ export class NavbarComponent {
 constructor(private usersService: UsersService) { } 
  
  
-  isLogged(): boolean { 
-    return this.usersService.getCurretUser() !== null;
-
-     
-  } 
+isLogged(): boolean {
+  return this.usersService.getCurrenUser() !== null;
+  
+}
  
   onClickLogout(): void { 
     this.usersService.logout(); 

@@ -23,7 +23,7 @@ export class UsersService {
   logout() : Promise<any>{
     return signOut(this.auth);
   }
-  getCurretUser() : User | null{
+  getCurrenUser(): User | null {
     return this.auth.currentUser;
   }
 }
