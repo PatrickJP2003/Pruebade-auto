@@ -22,6 +22,61 @@
     "tipo":3,
     "descripcion":"Juego de futbol",
     "imagen": "imagenes/valorant.jpg"
+},
+{
+    "id":4,
+    "nombre":"Call Of Duty",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de gerras",
+    "imagen": "imagenes/BO6.jpg"
+},
+{
+    "id":5,
+    "nombre":"Red Dead Redemption 2",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de vaqueros",
+    "imagen": "imagenes/1366_2000.jpeg"
+},
+{
+    "id":6,
+    "nombre":"Vallhalla",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de parkour",
+    "imagen": "imagenes/Culturageek.com_.ar-Assassins-Creed-Valhalla-1.jpeg"
+},
+{
+    "id":7,
+    "nombre":"Fortnite",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de armas",
+    "imagen": "imagenes/2x1_NSwitchDS_Fortnite_image1600w.jpg"
+},
+{
+    "id":8,
+    "nombre":"Dying Light 2 Stay Human",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de zombies",
+    "imagen": "imagenes/H2x1_NSwitchDS_DyingLight2StayHumanCloudVersion_image1600w.jpg"
+},
+{
+    "id":9,
+    "nombre":"Spiderman",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de telarañas",
+    "imagen": "imagenes/cover-616-b60e69.jpg"
+},
+{
+    "id":10,
+    "nombre":"The Final Shape",
+    "precio": 0,
+    "tipo":3,
+    "descripcion":"Juego de viajes",
+    "imagen": "imagenes/maxresdefault.jpg"
 }
-
 ]

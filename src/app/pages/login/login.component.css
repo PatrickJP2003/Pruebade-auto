@@ -1,80 +1,40 @@
-/* Contenedor del formulario */
-.container-fluid {
+body {
     background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
-
-/* Estilo para las etiquetas */
+.container {
+    max-width: 400px;
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
 .form-label {
-    color: #333;
     font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
-    font-size: 18px;
 }
-
-/* Estilo para los campos de entrada */
 .form-control {
-    border-radius: 5px;
-    padding: 12px;
-    border: 1px solid #ced4da;
-    font-size: 16px;
-    transition: border-color 0.3s ease-in-out;
+    border-radius: 0.25rem;
 }
-
-.form-control:focus {
-    border-color: #6f42c1; /* Color de enfoque morado */
-    box-shadow: 0 0 5px rgba(111, 56, 193, 0.5); /* Sombra morada */
+.btn-primary {
+    background-color: #6f42c1;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
-
-/* Contenedor para distribuir los botones en fila */
+.btn-primary:hover {
+    background-color: #5a2a91;
+}
 .form-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-/* Estilo para los botones */
-button {
-    background-color: #6f42c1; /* Color morado */
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px; /* Ajustado para mayor espacio */
-    font-size: 18px; /* Tamaño de fuente aumentado */
-    transition: background-color 0.3s ease-in-out;
-    color: white;
-    cursor: pointer;
-    margin: 10px 5px;
-    text-align: center; /* Alineación del texto al centro */
-    line-height: 1.5; /* Aumento de la altura de línea para mayor espacio */
-}
-
-button:hover {
-    background-color: #5a2a8e; /* Morado más oscuro al pasar el cursor */
-}
-
-/* Estilo para las validaciones */
-.invalid-feedback {
-    color: #e74c3c;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Ajustes generales para el HTML y body */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #e9ecef; /* Color de fondo suave */
-    font-family: Arial, sans-serif; /* Fuente más moderna */
+}
+.invalid-feedback {
+    display: block;
 }

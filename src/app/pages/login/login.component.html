@@ -1,11 +1,12 @@
-<div class="container-fluid text-center">
+<body>
+<div class="container">
     <form [formGroup]="form">
-        <div class="mb-3">
+        <div class="form-group">
             <label for="email" class="form-label">Correo</label>
             <input type="email" class="form-control" id="email" formControlName="email">
             <div class="invalid-feedback">El correo es obligatorio</div>
         </div>
-        <div class="mb-3">
+        <div class="form-group">
             <label for="password" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="password" formControlName="password">
             <div class="invalid-feedback">La contraseña es obligatoria</div>
@@ -17,3 +18,4 @@
         </div>
     </form>
 </div>
+</body>

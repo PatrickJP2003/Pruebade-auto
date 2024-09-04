@@ -82,3 +82,15 @@ body {
         width: 100%; /* Tarjetas ocupan el ancho completo en pantallas pequeñas */
     }
 }
+/* Background overlay styling */ 
+.background-overlay { 
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-particulas-tecnologia-realista-abstracta_52683-33064.jpg'); /* Replace with your background image URL */ 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
