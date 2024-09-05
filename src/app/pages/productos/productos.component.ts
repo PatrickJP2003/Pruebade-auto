@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import {  Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Producto } from '../home/utils/producto';
-import * as productoData from '../../../../public/json/productoData.json';
+import { Observable } from 'rxjs';
+import { GamesService } from '../../services/games/games.service'; // Asegúrate de que la ruta sea correcta
 
 @Component({
   selector: 'app-productos',
@@ -11,14 +11,16 @@ import * as productoData from '../../../../public/json/productoData.json';
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
-export class ProductosComponent {
-  productos: Producto[] = (productoData as any).default;
+export class ProductosComponent implements OnInit {
+  games$: Observable<any[]> | undefined; // Observable de juegos
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private gamesService: GamesService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.games$ = this.gamesService.getGames(); // Obtén los juegos desde Firebase
+  }
 
-  onClickProducto(producto: Producto): void {
-    this.router.navigate(['/producto', producto.id]);
+  onClickProducto(game: any): void {
+    this.router.navigate(['/producto', game.id]);
   }
 }

@@ -1,14 +1,16 @@
-<div class="background-overlay">
-<div class="container-fluid text-center">
-  <div class="d-flex flex-wrap">
-    <div *ngFor="let producto of productos" class="card" style="width: 18rem;">
-        <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+<div class="container">
+  <h2>Lista de Juegos</h2>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let game of (games$ | async)">
+      <div class="card">
+        <img [src]="game.imagen" class="card-img-top" alt="Imagen del juego">
         <div class="card-body">
-          <h5 class="card-title">{{producto.nombre}}</h5>
-          <p class="card-text">{{producto.descripcion}}</p>
-          <a class="btn btn-primary" (click)="onClickProducto(producto)">Mostrar Información</a>
+          <h5 class="card-title">{{ game.nombre }}</h5>
+          <p class="card-text">{{ game.descripcion }}</p>
+          <p class="card-text">Precio: {{ game.precio | currency }}</p>
+          <p class="card-text">Tipo: {{ game.tipo }}</p>
         </div>
       </div>
+    </div>
   </div>
-</div>
 </div>
